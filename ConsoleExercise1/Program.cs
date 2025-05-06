@@ -39,10 +39,9 @@ sequences are not processed.";
         }
 
         // Exercise1();
-        // GuessTheNumber();
-        ArgsExercise1(args[1], args[0]);
+        GuessTheNumber();
 
-    }
+
 
     private static void WriteHelloWorld()
     {
@@ -116,23 +115,6 @@ sequences are not processed.";
     }
 
 
-    public static int ArgsExercise1(string word, string text)
-    {
-        int count = 0;
-
-        Regex rgx = new Regex(word, RegexOptions.IgnoreCase);
-        Match mtch = rgx.Match(text);
-
-        if (mtch.Success)
-        {
-            count++;
-            
-        }
-        Console.WriteLine(count);
-        return count;
-       
-
-    }
 
 
 
